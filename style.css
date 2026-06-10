@@ -184,7 +184,27 @@ ul {
 .cabecalho__profissao {
   font-size: var(--fonte-tamanho-grande);
   color: var(--cor-texto-suave);
-  margin-bottom: var(--espaco-grande);
+  margin-bottom: var(--espaco-pequeno);
+}
+
+.cabecalho__github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--cor-texto-suave);
+  font-size: var(--fonte-tamanho-pequena);
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--cor-borda);
+  padding: 0.4rem 1rem;
+  border-radius: var(--borda-arredondada-total);
+  margin-top: var(--espaco-pequeno);
+  transition: color var(--transicao), border-color var(--transicao), background-color var(--transicao);
+}
+
+.cabecalho__github:hover {
+  color: var(--cor-texto);
+  border-color: var(--cor-primaria);
+  background-color: rgba(79, 142, 247, 0.08);
 }
 
 .navegacao {
