@@ -7,6 +7,7 @@
   <meta name="description" content="Portfólio de Kenzo Marx - Desenvolvedor Web em formação">
   <title>Kenzo Marx | Desenvolvedor Web</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -32,6 +33,9 @@
       <li class="navegacao__item">
         <a href="#projetos" class="navegacao__link">Projetos</a>
       </li>
+      <li class="navegacao__item">
+        <a href="#contato" class="navegacao__link">Contato</a>
+      </li>
     </ul>
   </nav>
 
@@ -50,16 +54,23 @@
           </div>
           <div class="sobre__texto">
             <p>
-              Olá! Me chamo Kenzo Marx e estou dando meus primeiros passos
-              no mundo do desenvolvimento web. Há menos de 6 meses comecei
-              minha jornada na programação e já me apaixonei por criar
-              páginas e interfaces para a internet.
+              Olá! Me chamo Kenzo Marx, tenho 19 anos e sou estudante de
+              Desenvolvimento de Software na UNIT (Universidade Tiradentes),
+              em Aracaju, Sergipe. Há menos de 6 meses iniciei minha jornada
+              na programação e já me apaixonei por criar páginas e interfaces
+              para a internet.
             </p>
             <p>
-              Estudo na UNIT em Aracaju e acredito que cada linha de código
-              é uma oportunidade de aprender algo novo. Estou em constante
-              evolução e animado com tudo que ainda tenho a descobrir
-              nessa área incrível!
+              Meu interesse está focado em desenvolvimento web front-end —
+              adoro transformar ideias em telas funcionais e bem projetadas.
+              Tenho estudado HTML, CSS, JavaScript e estou explorando
+              Python e Java na faculdade.
+            </p>
+            <p>
+              Minha aspiração é me tornar um desenvolvedor full-stack,
+              construir projetos que resolvam problemas reais e, no futuro,
+              contribuir para produtos que impactem a vida das pessoas.
+              Cada dia de estudo é um passo a mais nessa direção!
             </p>
             <div class="sobre__informacoes">
               <span class="sobre__dado">📍 Aracaju, Sergipe</span>
@@ -237,6 +248,58 @@
     </section>
 
 
+    <section class="secao secao--alternada" id="contato">
+      <div class="conteiner">
+        <h2 class="secao__titulo">Contato</h2>
+
+        <div id="contato__feedback" class="contato__feedback" aria-live="polite"></div>
+
+        <form class="contato__formulario" id="formularioContato" novalidate>
+
+          <div class="grupo-campo">
+            <label for="nome" class="campo-rotulo">Nome <span class="campo-obrigatorio">*</span></label>
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              class="campo-entrada"
+              placeholder="Seu nome completo"
+            >
+            <span class="campo-erro" id="erro-nome"></span>
+          </div>
+
+          <div class="grupo-campo">
+            <label for="email" class="campo-rotulo">E-mail <span class="campo-obrigatorio">*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="campo-entrada"
+              placeholder="seu@email.com"
+            >
+            <span class="campo-erro" id="erro-email"></span>
+          </div>
+
+          <div class="grupo-campo">
+            <label for="mensagem" class="campo-rotulo">Mensagem <span class="campo-obrigatorio">*</span></label>
+            <textarea
+              id="mensagem"
+              name="mensagem"
+              class="campo-entrada campo-texto"
+              placeholder="Sua mensagem..."
+              rows="5"
+            ></textarea>
+            <span class="campo-erro" id="erro-mensagem"></span>
+          </div>
+
+          <button type="submit" class="botao botao--primario botao--cheio">
+            Enviar Mensagem
+          </button>
+
+        </form>
+      </div>
+    </section>
+
   </main>
 
   <footer class="rodape">
@@ -245,6 +308,8 @@
         <p class="rodape__texto">
           Feito com <span class="rodape__coracao">❤️</span> por
           <strong>Kenzo Marx</strong>
+        </p>
+        <p class="rodape__direitos">&copy; 2026 Todos os direitos reservados.</p>
       </div>
     </div>
   </footer>
